@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,15 @@
 		527B5E8E26F192C700B23E5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B5E8D26F192C700B23E5F /* SceneDelegate.swift */; };
 		527B5E9526F192C800B23E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527B5E9426F192C800B23E5F /* Assets.xcassets */; };
 		527B5E9826F192C800B23E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527B5E9626F192C800B23E5F /* LaunchScreen.storyboard */; };
+		52CF777C26F2C29D00A83D23 /* DepartmentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF777B26F2C29D00A83D23 /* DepartmentsListViewController.swift */; };
 		52F1F2E726F26CE4001FAAFB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F2E626F26CE4001FAAFB /* HomeViewController.swift */; };
 		52F1F2EA26F275FD001FAAFB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F2E926F275FD001FAAFB /* Colors.swift */; };
 		52F1F2EC26F292CC001FAAFB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F2EB26F292CC001FAAFB /* Fonts.swift */; };
 		52F1F2F326F29C54001FAAFB /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F2F226F29C54001FAAFB /* EmployeeDetailViewController.swift */; };
 		52F1F2F526F2A252001FAAFB /* AddNewEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F2F426F2A252001FAAFB /* AddNewEmployeeViewController.swift */; };
+		52F1F2F826F2AFC6001FAAFB /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F2F726F2AFC6001FAAFB /* RealmObject.swift */; };
+		52F1F2FA26F2B2AB001FAAFB /* ListOfEmployees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F2F926F2B2AB001FAAFB /* ListOfEmployees.swift */; };
+		52F1F2FC26F2B602001FAAFB /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F2FB26F2B602001FAAFB /* EmployeeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +29,15 @@
 		527B5E9426F192C800B23E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		527B5E9726F192C800B23E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		527B5E9926F192C800B23E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CF777B26F2C29D00A83D23 /* DepartmentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsListViewController.swift; sourceTree = "<group>"; };
 		52F1F2E626F26CE4001FAAFB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		52F1F2E926F275FD001FAAFB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		52F1F2EB26F292CC001FAAFB /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		52F1F2F226F29C54001FAAFB /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
 		52F1F2F426F2A252001FAAFB /* AddNewEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEmployeeViewController.swift; sourceTree = "<group>"; };
+		52F1F2F726F2AFC6001FAAFB /* RealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObject.swift; sourceTree = "<group>"; };
+		52F1F2F926F2B2AB001FAAFB /* ListOfEmployees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfEmployees.swift; sourceTree = "<group>"; };
+		52F1F2FB26F2B602001FAAFB /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 			children = (
 				527B5E8A26F192C700B23E5F /* EjecucionNomina */,
 				527B5E8926F192C700B23E5F /* Products */,
+				DAB6719E54582661BDBFD210 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +71,7 @@
 		527B5E8A26F192C700B23E5F /* EjecucionNomina */ = {
 			isa = PBXGroup;
 			children = (
+				52F1F2F626F2AFB5001FAAFB /* Objects */,
 				52F1F2ED26F29BE9001FAAFB /* Home */,
 				52F1F2E826F275A4001FAAFB /* Utilities */,
 				527B5E8B26F192C700B23E5F /* AppDelegate.swift */,
@@ -71,6 +81,14 @@
 				527B5E9926F192C800B23E5F /* Info.plist */,
 			);
 			path = EjecucionNomina;
+			sourceTree = "<group>";
+		};
+		52CF777A26F2C28E00A83D23 /* Departments */ = {
+			isa = PBXGroup;
+			children = (
+				52CF777B26F2C29D00A83D23 /* DepartmentsListViewController.swift */,
+			);
+			path = Departments;
 			sourceTree = "<group>";
 		};
 		52F1F2E826F275A4001FAAFB /* Utilities */ = {
@@ -85,6 +103,7 @@
 		52F1F2ED26F29BE9001FAAFB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				52CF777A26F2C28E00A83D23 /* Departments */,
 				52F1F2EE26F29BF2001FAAFB /* Employees */,
 				52F1F2E626F26CE4001FAAFB /* HomeViewController.swift */,
 			);
@@ -94,10 +113,35 @@
 		52F1F2EE26F29BF2001FAAFB /* Employees */ = {
 			isa = PBXGroup;
 			children = (
+				52F1F2FD26F2B60A001FAAFB /* Cell */,
 				52F1F2F226F29C54001FAAFB /* EmployeeDetailViewController.swift */,
 				52F1F2F426F2A252001FAAFB /* AddNewEmployeeViewController.swift */,
+				52F1F2F926F2B2AB001FAAFB /* ListOfEmployees.swift */,
 			);
 			path = Employees;
+			sourceTree = "<group>";
+		};
+		52F1F2F626F2AFB5001FAAFB /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				52F1F2F726F2AFC6001FAAFB /* RealmObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		52F1F2FD26F2B60A001FAAFB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52F1F2FB26F2B602001FAAFB /* EmployeeCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DAB6719E54582661BDBFD210 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +217,13 @@
 				52F1F2EC26F292CC001FAAFB /* Fonts.swift in Sources */,
 				52F1F2F526F2A252001FAAFB /* AddNewEmployeeViewController.swift in Sources */,
 				52F1F2EA26F275FD001FAAFB /* Colors.swift in Sources */,
+				52CF777C26F2C29D00A83D23 /* DepartmentsListViewController.swift in Sources */,
+				52F1F2F826F2AFC6001FAAFB /* RealmObject.swift in Sources */,
 				527B5E8E26F192C700B23E5F /* SceneDelegate.swift in Sources */,
 				52F1F2F326F29C54001FAAFB /* EmployeeDetailViewController.swift in Sources */,
+				52F1F2FA26F2B2AB001FAAFB /* ListOfEmployees.swift in Sources */,
 				52F1F2E726F26CE4001FAAFB /* HomeViewController.swift in Sources */,
+				52F1F2FC26F2B602001FAAFB /* EmployeeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

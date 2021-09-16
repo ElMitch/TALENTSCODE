@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RealmSwift
+import Realm
 
 class AddNewEmployeeViewController: UIViewController {
     
@@ -25,6 +27,9 @@ class AddNewEmployeeViewController: UIViewController {
     private let salaryOfEmployee = UITextField()
     private let saveEmployee = UIButton()
     private let scrollView = UIScrollView()
+    
+    private var employeeDB: EmployeeDB!
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,6 +131,18 @@ class AddNewEmployeeViewController: UIViewController {
     }
     
     @objc func saveActionEmployee() {
+        let employeeDB = EmployeeDB()
+        employeeDB.number = numberOfEmployee.text!
+        employeeDB.name = nameOfEmployee.text!
+        employeeDB.lastName = lastNameOfEmployee.text!
+        employeeDB.address = addressOfEmployee.text!
+        employeeDB.phone = phoneOfEmployee.text!
+        employeeDB.department = departmentOfEmployee.text!
+        employeeDB.salary = salaryOfEmployee.text!
+        realm.beginWrite()
+        realm.add(employeeDB)
+        try! realm.commitWrite()
+        
         let alert = UIAlertController(title: "Registro completado", message: "El empleado se ha guardado con exito", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: { _ in
             self.navigationController?.popViewController(animated: true)

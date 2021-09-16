@@ -100,7 +100,11 @@ class HomeViewController: UIViewController {
     
     @objc func calculate() {
         let alert = UIAlertController(title: "Calculo de nómina", message: "Se ha calculado la nomina para pago", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: { _ in
+            let listOfEmployees =  ListOfEmployees()
+            listOfEmployees.isPayment = true
+            self.navigationController?.pushViewController(listOfEmployees, animated: true)
+        }))
         self.present(alert, animated: true, completion: nil)
     }
     
@@ -111,10 +115,14 @@ class HomeViewController: UIViewController {
     
     @objc func viewDepartments() {
         print("Se ven departamentos")
+        let departments = DepartmentsListViewController()
+        navigationController?.pushViewController(departments, animated: true)
     }
     
     @objc func viewEmployees() {
         print("Se ven empleados")
+        let listVC = ListOfEmployees()
+        navigationController?.pushViewController(listVC, animated: true)
     }
     
 }
